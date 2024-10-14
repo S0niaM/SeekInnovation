@@ -1,0 +1,99 @@
+/* Font setup */
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Focus Areas Section */
+.focus-areas {
+  text-align: center;
+}
+
+.focus-areas-heading {
+  color: #364581;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.focus-areas .card {
+
+   
+  border: 1px solid #ccc;
+  
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.4s;
+  height: 100%; /* Ensure the card takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.focus-areas .card:hover {
+  border: 2px solid #FFD700;
+  transform: translateY(-10px) scale(1.03) rotate(0deg); /* Slight rotation */
+  /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);*/
+  box-shadow: 0 15px 30px rgba(255, 223, 0, 0.5);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0.95; /* Slight opacity change for a fading effect */
+}
+ 
+
+
+/* Card Body Styles */
+.focus-areas .card-body {
+  background-color: #FFD700;
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.focus-areas .card-body:hover {
+  background-color: #b59a06;
+}
+
+/* Image Styling */
+.focus-areas .card-img-top {
+  height: 250px;
+  object-fit: cover; /* Ensure the image covers its space without distortion */
+  width: 100%; /* Ensure the image fits the width */
+}
+
+/* Title Styling */
+.focus-areas .card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 20px;
+  color: #364581;
+} 
+
+/* Text Styling */
+.focus-areas .card-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 0;
+  text-align: center; /* Center the text */
+  white-space: normal; /* Allow the text to wrap normally */
+  word-break: break-word; /* Ensure long words break if necessary */
+}
+ 
+
+/* Responsive Layout */
+@media (min-width: 992px) {
+  .focus-areas .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensure all cards are the same height */
+  }
+
+  .focus-areas .col-lg-4 {
+    display: flex;
+    align-items: stretch; /* Align cards vertically to take the same height */
+  }
+}

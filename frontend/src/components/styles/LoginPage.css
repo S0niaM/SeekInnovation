@@ -1,0 +1,71 @@
+.loginpage-login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.loginpage-left-section {
+  flex: 3;
+  background-color: #f5f5f5;
+}
+
+.loginpage-login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loginpage-right-section {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.loginpage-logo-section {
+  margin-top: 50px;
+}
+
+.loginpage-logo {
+  width: 80px;
+  height: 90px;
+}
+
+.loginpage-form-section {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  width: 100%;
+  max-width: 400px;
+}
+.loginpage-form-section h2{
+  color: #364581;
+  font-size: 38px;
+  font-weight: 800;
+}
+.loginpage-form-group {
+  margin-bottom: 15px;
+}
+
+.loginpage-login-btn {
+  width: 100%;
+  background-color: #364581;
+  color: white;
+}
+
+.loginpage-register-link {
+  font-size: larger;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+
+.loginpage-register-link a {
+  color: #364581;
+  text-decoration: none;
+  font-weight: bold;
+}
+.loginpage-register-link a:hover{
+  text-decoration: underline;
+  color: #593ac0;
+}

@@ -1,0 +1,62 @@
+.sectorandapp-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .sectorandapp-column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .sectorandapp-sectorColumn {
+    border-right: 1px solid #ccc;
+  }
+  
+  .sectorandapp-applicationColumn {
+    padding-left: 20px;
+  }
+  
+  .sectorandapp-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .sectorandapp-category {
+    margin-bottom: 20px;
+  }
+  .sectorandapp-category h4{
+    color: #364581;
+  }
+  .sectorandapp-categoryHeader {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+
+.sectorandapp-categoryHeader span {
+    font-size: 24px; 
+    line-height: 1;  
+    margin-left: 10px;  
+  }
+  .sectorandapp-applicationList {
+    list-style: none;
+    padding-left: 0;
+    display: flex;  
+    flex-wrap: wrap;  
+  }
+  
+  .sectorandapp-checkboxItem {
+    width: 50%;  
+    box-sizing: border-box;  
+    margin-bottom: 10px;  
+    display: flex;  
+    align-items: center; 
+  }
+  
+  .sectorandapp-checkboxItem input {
+    margin-right: 10px;  
+  }
+  

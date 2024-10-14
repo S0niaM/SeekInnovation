@@ -1,0 +1,87 @@
+.signinpopup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinpopup-modal {
+  background: white;
+  padding: 20px;
+  width: 480px; /* Adjust the width as per your need */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.signinpopup-header {
+  margin-bottom: 20px;
+}
+
+.signinpopup-logo {
+  width: 50px;  
+  margin-right: 360px;
+}
+
+.signinpopup-body {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.signinpopup-body h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #364581;
+}
+
+.signinpopup-body p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.signinpopup-checkbox {
+  display: flex;
+  align-items: center;
+   
+}
+
+.signinpopup-checkbox label {
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+
+.signinpopup-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signinpopup-no, .signinpopup-yes {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+.signinpopup-no:hover, .signinpopup-yes:hover{
+  text-decoration: underline;
+}
+.signinpopup-no {
+  background-color: lightgray;
+  margin-right: 0;
+  border-radius: 3px 0 0 3px; /* Rounded only on the left */
+}
+
+.signinpopup-yes {
+  background-color: #364581; /* Dark Blue */
+  color: white;
+  border-radius: 0 3px 3px 0; /* Rounded only on the right */
+}
+
+.signinpopup-footer button:focus {
+  outline:auto;
+}

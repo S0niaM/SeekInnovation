@@ -1,0 +1,175 @@
+.offersNeeds {
+  padding: 20px;
+  background-color:white;
+  font-family: Arial, sans-serif;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.offers, .needs {
+  width: 45%;
+  padding: 0;
+  border: 8px solid rgb(218, 225, 13); /* Border around the boxes */
+  border-radius: 5px;
+}
+
+h4 {
+  font-size: 25px;
+  color:#FFD700;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 2px 3px 0 0;
+}
+
+.offers h4 {
+  background-color: #364581; /* Red for Offers */
+ 
+}
+
+.needs h4 {
+  background-color: #364581; /* Blue for Needs */
+}
+
+/* Parent Category Styling */
+.optionItem {
+  padding: 10px;
+  align-items: center;
+  background-color:#ecebeb; /* Light grey for alternate rows */
+  border-bottom: 1px solid #e0e0e0; /* Bottom border for separation */
+  position: relative;
+  flex-direction: column;
+  font-size: larger;
+  font-weight: 600;
+  
+}
+
+.optionItem:nth-child(even) {
+  background-color: white; /* White for alternate rows */
+}
+
+.optionItem input {
+  margin-right: 10px;
+ 
+}
+
+.optionItem label {
+  font-size: 14px;
+ 
+}
+
+/* Subcategory Styling */
+.subcategory {
+
+  align-items: center;
+  margin-left: 25px;
+  padding-left: 18px;
+  border-left: 1px solid #ecebeb;
+  margin-top: 5px;
+  display: flex;
+ 
+}
+ 
+.subcategory input {
+  margin-right: 10px;
+  
+
+}
+
+.subcategory label {
+  font-size: 20px;
+  color: white;
+ 
+}
+
+.buttonsTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.buttonsTop button {
+  padding: 10px 20px;
+  background-color:#FFD700; /* Red button background */
+  color:#364581;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonsTop button:hover{
+  background-color: #baa52f;
+}
+ 
+ 
+
+.needsLinks {
+  margin-bottom: 35px;
+}
+.offersLinks{
+  margin-bottom: 35px;
+}
+
+.link {
+  text-decoration: underline;
+  color: #293c8b; /* Link color */
+  cursor: pointer;
+  font-size: 20px; 
+  margin-right: 15px;
+}
+.link:hover{
+  color:#324697;
+  font-weight: bolder;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the boxes */
+}
+
+.section {
+  flex: 1 1 calc(50% - 20px); /* 2 boxes per row with gap */
+  margin-top: 20px;
+  padding: 10px;
+  border: 2.5px solid #abc622;
+  border-radius: 8px;
+  background-color: #364581;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This pushes buttons to the bottom */
+  box-sizing: border-box;
+}
+
+.section:hover {
+  background-color: #364584; /* Darker shade on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.buttonsSection {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Remove margin-top or padding to push buttons to bottom */
+}
+
+.buttonsSection button {
+  padding: 5px 10px;
+  background: none; /* No background color */
+  color: #FFD700; /* Link color */
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.buttonsSection button:hover {
+  color: #baa52f;
+  text-decoration: underline;
+  font-weight: bold;
+}
+

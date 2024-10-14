@@ -1,0 +1,82 @@
+.productsandassetsContainer {
+    display: flex;
+    background-color: #ccd1d6; /* Dark blue */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .productsandassetsColumn {
+    flex: 1;
+    color:#364581;
+    padding: 10px;
+  }
+  .productsandassetsColumn h2{
+    color: #112d9f;
+    font-weight: bold;
+  }
+  .productsandassetsCheckboxContainer {
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin-left: -10px;
+  }
+  
+  .productsandassetsCheckboxItem {
+    width: 50%;  
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  .productsandassetsCheckboxItem label{
+    font-size: 15px;
+  }
+  .productsandassetsLinks {
+    margin-top: 20px;
+  }
+  
+  .productsandassetsLink {
+    color:#112d9f;
+    font-size: larger;
+    
+    margin-right: 15px;
+    text-decoration: underline;
+  }
+  
+  .productsandassetsLink:hover {
+    text-decoration: none;
+  }
+  
+  .productsandassetsProductDescription {
+    background-color: #fff; /* White */
+    color: #000; /* Black for readability */
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .productsandassetsProductFileInput {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .productsandassetsProductUploadedFilesList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .productsandassetsProductUploadedFileItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .productsandassetsProductRemoveIcon {
+    cursor: pointer;
+    color: red;
+  }
+  

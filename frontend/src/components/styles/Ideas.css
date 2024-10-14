@@ -1,0 +1,89 @@
+/* styles/Ideas.css */
+
+.section {
+  background-color: #364581; /* Dark blue background for the entire section */
+  padding: 30px 0;
+  color: #ffffff; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  color: #d7d107; /* Dark blue color for heading */
+  text-align: center; /* Center align the heading */
+  margin-top:0%;  
+  margin-bottom: 60px;
+  font-size: 2rem; /* Larger font size for the heading */
+  font-weight: 700; /* Bold text */
+}
+
+.idea {
+  max-width: 100%;
+}
+
+.idea-card {
+  background-color: #ffffff; /* White background for cards */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.idea-card:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-title {
+  margin-top: 15px;
+  color: #364581; /* Dark blue color for titles */
+  font-weight: 600;
+}
+ 
+.card-text {
+ 
+  font-size: 17px; 
+  font-weight: 400;  
+  text-indent:40px;
+  color: #333333; 
+  background-color: transparent;  
+  padding-left: 40px;
+  text-align:justify; /* Align text to the left */
+  line-height: 1.5;  
+  padding: 10px;  
+  margin: 0;  
+ 
+}
+
+.btn {
+  background-color: #FFD700; /* Gold color for buttons */
+  color: #364581;  
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #ffcc00;  
+  transform: scale(1.05);  
+}
+
+@media (max-width: 767px) {
+  .idea-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .idea-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}

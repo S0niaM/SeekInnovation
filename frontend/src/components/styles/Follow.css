@@ -1,0 +1,40 @@
+.follow {
+    position:relative;  
+    bottom: 0;       
+    left: 0;         
+    width: 100%;     
+    background-color: #364581;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;   
+  }
+  .follow .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .follow .social-media p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .follow .social-media a {
+    display: inline-block;
+    margin-left: 2.5rem;
+    color: #FFD700;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  .footer .social-media a:hover {
+    color: #007bff;
+    transition: width 2s, height 10s;
+  }
+  
+  .footer .contact-details {
+    margin-top: 10px;
+  }
+  

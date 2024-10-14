@@ -1,0 +1,77 @@
+ 
+  .logo-container {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    overflow:hidden; /* Hide logos as they move outside the container */
+    white-space: nowrap;
+  }
+  
+  .logo-slider {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
+  }
+  
+  .lrow {
+    display: flex; /* Align logos horizontally */
+    flex-wrap: nowrap;
+    align-items: center; /* Center logos vertically */
+    justify-content:space-around; /* Adjust the spacing between logos */
+    gap:3.5rem;
+  }
+  
+  .logoimg {
+    height: 50px; /* Adjust size as needed */
+    margin: 0 1.5rem; /* Space between logos */
+    flex-shrink: 0; /* Prevent logos from shrinking */
+  }
+  
+  /* Continuous scrolling effect */
+  @keyframes scroll-r-to-l {
+    0% {
+      transform: translateX(0%); /* Start at the original position */
+    }
+    100% {
+      transform: translateX(-100%); /* Move all logos completely off the left side */
+    }
+  }
+  
+ 
+  
+  .row1 {
+    animation: scroll-r-to-l 15s linear infinite; /* Adjusted timing for smooth scrolling */
+  }
+  
+ 
+  
+  /* Hide scrollbars */
+  .logo-container::-webkit-scrollbar {
+    
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+  .logo-container {
+    scrollbar-width: 0;
+    scrollbar-color: white;
+  }
+
+
+  /* Duplicate rows */
+.row1{
+  display: flex;
+  animation: scroll-right-to-left 15s linear infinite; /* Continuous scrolling */
+}
+
+/* Add a duplicate set of logos to create the continuous effect */
+.row1::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  overflow-x: hidden; /* Hide horizontal overflow at the root level */
+}
+  
